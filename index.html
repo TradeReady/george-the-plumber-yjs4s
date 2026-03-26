@@ -25,7 +25,6 @@
     .fade-in { opacity:0; animation: fadeIn 0.7s ease forwards; }
     .slide-in { opacity:0; animation: slideIn 0.6s ease forwards; }
 
-    /* NAVBAR */
     .t3-nav { position:fixed;top:0;left:0;right:0;z-index:100;background:#1e2a3a;height:56px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1); }
     .t3-nav-inner { max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;width:100%; }
     .t3-nav-logo { font-weight:900;color:#fff;font-size:1.15rem;letter-spacing:-0.01em; }
@@ -38,7 +37,6 @@
     .t3-btn-outline { display:inline-flex;align-items:center;gap:8px;padding:8px 20px;font-size:0.875rem;font-weight:900;color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.2);border-radius:999px;transition:all 0.2s; }
     .t3-btn-outline:hover { border-color:rgba(255,255,255,0.5);color:#fff; }
 
-    /* HERO */
     .t3-hero { display:flex;min-height:480px;padding-top:56px; }
     .t3-hero-left { flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:48px 64px; }
     .t3-hero-right { position:relative;width:45%;min-height:400px; }
@@ -58,21 +56,17 @@
     .t3-stat-num { font-size:1.5rem;font-weight:900;color:#111827;letter-spacing:-0.02em; }
     .t3-stat-label { font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#9ca3af;margin-top:2px; }
 
-    /* SERVICES */
     .t3-services-header { background:#fff;border-bottom:1px solid #e5e7eb;padding:28px 64px;display:flex;align-items:center;justify-content:space-between; }
     .t3-service-row { display:flex;align-items:center;background:#fff;cursor:pointer;transition:background 0.3s; border-bottom:1px solid #e5e7eb; }
 
-    /* ABOUT */
     .t3-about { display:flex;min-height:500px; }
     .t3-about-left { width:40%;display:flex;flex-direction:column;justify-content:center;padding:64px;background:#c05c7e; }
-    .t3-about-right { flex:1;display:flex;flex-direction:column;divide-y:1px solid #f3f4f6; }
+    .t3-about-right { flex:1;display:flex;flex-direction:column; }
 
-    /* TESTIMONIALS */
     .t3-reviews-header { background:#fff;border-bottom:1px solid #e5e7eb;padding:28px 64px;display:flex;align-items:center;justify-content:space-between; }
     .t3-reviews-grid { display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid #e5e7eb; }
     .t3-review { border-right:1px solid #e5e7eb; }
 
-    /* CTA BANNER */
     .t3-cta-section { position:relative;min-height:280px;display:flex;align-items:center;overflow:hidden; }
     .t3-cta-overlay { position:absolute;inset:0;background:#1e2a3a;opacity:0.88; }
     .t3-cta-inner { position:relative;z-index:1;width:100%;max-width:1280px;margin:0 auto;padding:80px 64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:40px; }
@@ -81,7 +75,6 @@
     .t3-cta-phone { display:inline-flex;align-items:center;gap:8px;padding:16px 32px;color:#fff;border:2px solid rgba(255,255,255,0.3);font-size:0.875rem;font-weight:900;border-radius:999px;white-space:nowrap;transition:border-color 0.2s; }
     .t3-cta-phone:hover { border-color:rgba(255,255,255,0.6); }
 
-    /* CONTACT */
     .t3-contact { display:flex;min-height:600px; }
     .t3-contact-left { width:40%;background:#030712;padding:64px;display:flex;flex-direction:column;justify-content:space-between; }
     .t3-contact-right { flex:1;background:#fff;padding:64px;display:flex;flex-direction:column;justify-content:center; }
@@ -92,9 +85,8 @@
     .t3-submit { width:100%;padding:16px;background:#c05c7e;color:#fff;font-size:0.875rem;font-weight:900;letter-spacing:0.1em;text-transform:uppercase;border:none;border-radius:999px;cursor:pointer;transition:opacity 0.2s; }
     .t3-submit:hover { opacity:0.9; }
     .t3-contact-item { display:flex;align-items:center;gap:16px;margin-bottom:24px; }
-    .t3-contact-icon { width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#c05c7e20;flex-shrink:0;font-size:1rem; }
+    .t3-contact-icon { width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#c05c7e20;flex-shrink:0;color:#c05c7e; }
 
-    /* FOOTER */
     .t3-footer { background:#fff;border-top:4px solid #c05c7e;padding:48px 64px; }
     .t3-footer-grid { display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between;margin-bottom:40px; }
 
@@ -119,7 +111,6 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="t3-nav">
   <div class="t3-nav-inner">
     <div class="t3-nav-logo">
@@ -132,13 +123,12 @@
       <a href="#contact">Contact</a>
     </div>
     <div class="t3-nav-cta">
-      <a href="tel:07893970121" class="t3-btn-primary">📞 Call Now</a>
+      <a href="tel:07893970121" class="t3-btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg> Call Now</a>
       <a href="#contact" class="t3-btn-outline">Free Quote →</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="t3-hero" style="background:#f8f9fa;">
   <div class="t3-hero-left">
     <div>
@@ -147,7 +137,7 @@
       <p class="t3-subh fade-in" style="animation-delay:0.2s;">Reliable solutions for all your plumbing needs.</p>
       <div class="t3-hero-btns fade-in" style="animation-delay:0.3s;">
         <a href="#contact" class="t3-cta-primary">Get a Free Quote</a>
-        <a href="tel:07893970121" class="t3-cta-secondary">📞 Call Now</a>
+        <a href="tel:07893970121" class="t3-cta-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg> Call Now</a>
       </div>
     </div>
     <div class="t3-stats fade-in" style="animation-delay:0.5s;">
@@ -166,7 +156,6 @@
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
   <div class="t3-services-header">
     <h2 style="font-size:1.5rem;font-weight:900;color:#111827;text-transform:uppercase;letter-spacing:-0.01em;">Our Services</h2>
@@ -271,7 +260,6 @@
     </div></div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="t3-about">
     <div class="t3-about-left fade-left">
@@ -297,14 +285,13 @@
       <span style="color:#c05c7e;font-size:1.25rem;flex-shrink:0;margin-top:2px;">✓</span>
       <p style="color:#1f2937;font-weight:600;font-size:1rem;line-height:1.6;">Fast & Competitive Pricing</p>
     </div>
-      <div style="padding:40px;"> 
+      <div style="padding:40px;">
         <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:#c05c7e;color:#fff;font-size:0.875rem;font-weight:900;border-radius:0;">Work With Us →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section id="testimonials">
   <div class="t3-reviews-header">
     <h2 style="font-size:1.5rem;font-weight:900;color:#111827;text-transform:uppercase;letter-spacing:-0.01em;">Customer Reviews</h2>
@@ -349,7 +336,6 @@
     </div></div>
 </section>
 
-<!-- CTA BANNER -->
 <section class="t3-cta-section">
   <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=1400&q=80&auto=format&fit=crop" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
   <div class="t3-cta-overlay"></div>
@@ -360,12 +346,11 @@
     </div>
     <div class="t3-cta-btns fade-right">
       <a href="#contact" class="t3-cta-white">Get a Free Quote →</a>
-      <a href="tel:07893970121" class="t3-cta-phone">📞 07893970121</a>
+      <a href="tel:07893970121" class="t3-cta-phone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg> 07893970121</a>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="t3-contact">
     <div class="t3-contact-left fade-left">
@@ -374,14 +359,14 @@
         <h2 style="font-size:2.5rem;font-weight:900;color:#fff;line-height:1.05;letter-spacing:-0.03em;margin-bottom:24px;">Get Your<br />Free Quote</h2>
         <p style="color:rgba(255,255,255,0.5);font-size:0.875rem;line-height:1.6;margin-bottom:48px;">Fill in the form and we'll respond within the hour. No obligation, no hard sell.</p>
         <div>
-          <div class="t3-contact-item"><div class="t3-contact-icon">📞</div><div><div style="font-size:0.7rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;margin-bottom:2px;">Phone</div><div style="font-weight:900;color:#fff;font-size:0.9rem;">07893970121</div></div></div>
-          <div class="t3-contact-item"><div class="t3-contact-icon">✉️</div><div><div style="font-size:0.7rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;margin-bottom:2px;">Email</div><div style="font-weight:900;color:#fff;font-size:0.9rem;">info@georgetheplumber.co.uk</div></div></div>
-          <div class="t3-contact-item"><div class="t3-contact-icon">📍</div><div><div style="font-size:0.7rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;margin-bottom:2px;">Location</div><div style="font-weight:900;color:#fff;font-size:0.9rem;">Wigan</div></div></div>
+          <div class="t3-contact-item"><div class="t3-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg></div><div><div style="font-size:0.7rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;margin-bottom:2px;">Phone</div><div style="font-weight:900;color:#fff;font-size:0.9rem;">07893970121</div></div></div>
+          <div class="t3-contact-item"><div class="t3-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div><div><div style="font-size:0.7rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;margin-bottom:2px;">Email</div><div style="font-weight:900;color:#fff;font-size:0.9rem;">info@georgetheplumber.co.uk</div></div></div>
+          <div class="t3-contact-item"><div class="t3-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div style="font-size:0.7rem;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;margin-bottom:2px;">Location</div><div style="font-weight:900;color:#fff;font-size:0.9rem;">Wigan</div></div></div>
         </div>
       </div>
     </div>
     <div class="t3-contact-right fade-right">
-      <form id="lead-form" class="space-y-6">
+      <form id="lead-form">
         <div class="t3-form-grid">
           <div><label class="t3-label">Full Name *</label><input class="t3-input" type="text" name="name" placeholder="Enter your full name" required /></div>
           <div><label class="t3-label">Phone Number *</label><input class="t3-input" type="tel" name="phone" placeholder="Enter your phone number" required /></div>
@@ -399,7 +384,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="t3-footer">
   <div class="t3-footer-grid">
     <div style="max-width:280px;">
@@ -408,16 +392,16 @@
     </div>
     <div>
       <h4 style="font-weight:900;color:#111827;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.2em;margin-bottom:20px;">Services</h4>
-      <ul style="list-style:none;space-y:10px;">
-        <li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='#111827'" onmouseout="this.style.color='#9ca3af'">Bathroom Installation</a></li><li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='#111827'" onmouseout="this.style.color='#9ca3af'">Install Hot-Water Cylinder</a></li><li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='#111827'" onmouseout="this.style.color='#9ca3af'">Install Shower</a></li><li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='#111827'" onmouseout="this.style.color='#9ca3af'">Install Toilet</a></li><li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;transition:color 0.2s;" onmouseover="this.style.color='#111827'" onmouseout="this.style.color='#9ca3af'">Repair Tap</a></li>
+      <ul style="list-style:none;">
+        <li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;">Bathroom Installation</a></li><li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;">Install Hot-Water Cylinder</a></li><li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;">Install Shower</a></li><li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;">Install Toilet</a></li><li style="margin-bottom:10px;"><a href="#services" style="color:#9ca3af;font-size:0.875rem;">Repair Tap</a></li>
       </ul>
     </div>
     <div>
       <h4 style="font-weight:900;color:#111827;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.2em;margin-bottom:20px;">Get In Touch</h4>
-      <div style="space-y:12px;">
-        <p style="margin-bottom:12px;"><a href="tel:07893970121" style="display:flex;align-items:center;gap:12px;color:#9ca3af;font-size:0.875rem;">📞 07893970121</a></p>
-        <p style="margin-bottom:12px;"><a href="mailto:info@georgetheplumber.co.uk" style="display:flex;align-items:center;gap:12px;color:#9ca3af;font-size:0.875rem;">✉️ info@georgetheplumber.co.uk</a></p>
-        <p style="color:#9ca3af;font-size:0.875rem;">📍 Wigan</p>
+      <div>
+        <p style="margin-bottom:12px;"><a href="tel:07893970121" style="display:flex;align-items:center;gap:8px;color:#9ca3af;font-size:0.875rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.7a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16z"/></svg> 07893970121</a></p>
+        <p style="margin-bottom:12px;"><a href="mailto:info@georgetheplumber.co.uk" style="display:flex;align-items:center;gap:8px;color:#9ca3af;font-size:0.875rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> info@georgetheplumber.co.uk</a></p>
+        <p style="display:flex;align-items:center;gap:8px;color:#9ca3af;font-size:0.875rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;flex-shrink:0;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Wigan</p>
       </div>
     </div>
   </div>
@@ -428,7 +412,6 @@
 </footer>
 
 <script>
-  // Scroll-triggered animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -442,7 +425,6 @@
     observer.observe(el);
   });
 
-  // Form submission
   document.getElementById('lead-form')?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(e.target));
@@ -456,13 +438,6 @@
       });
     } catch(err) {}
   });
-
-  // Mobile nav toggle
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', () => mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none');
-  }
 </script>
 </body>
 </html>
