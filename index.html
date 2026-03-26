@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins,+sans-serif:wght@400;600;700;800;900&display=swap" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Poppins, sans-serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9f6f0; color: #1a2e1f; }
+    body { font-family: 'Poppins, sans-serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f9fa; color: #1e2a3a; }
     a { text-decoration: none; }
 
     @keyframes fadeInLeft { from { opacity:0; transform:translateX(-30px); } to { opacity:1; transform:translateX(0); } }
@@ -25,14 +25,14 @@
     .fade-in { opacity:0; animation: fadeIn 0.7s ease forwards; }
     .slide-in { opacity:0; animation: slideIn 0.6s ease forwards; }
 
-    .t3-nav { position:fixed;top:0;left:0;right:0;z-index:100;background:#1a2e1f;height:56px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1); }
+    .t3-nav { position:fixed;top:0;left:0;right:0;z-index:100;background:#1e2a3a;height:56px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1); }
     .t3-nav-inner { max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;width:100%; }
     .t3-nav-logo { font-weight:900;color:#fff;font-size:1.15rem;letter-spacing:-0.01em; }
     .t3-nav-links { display:flex;align-items:center;gap:4px; }
     .t3-nav-links a { padding:8px 16px;font-size:0.875rem;font-weight:600;color:rgba(255,255,255,0.6);transition:color 0.2s; }
     .t3-nav-links a:hover { color:#fff; }
     .t3-nav-cta { display:flex;align-items:center;gap:8px; }
-    .t3-btn-primary { display:inline-flex;align-items:center;gap:6px;padding:8px 16px;font-size:0.875rem;font-weight:900;color:#fff;background:#2d6a4f;border-radius:999px;transition:opacity 0.2s; }
+    .t3-btn-primary { display:inline-flex;align-items:center;gap:6px;padding:8px 16px;font-size:0.875rem;font-weight:900;color:#fff;background:#c05c7e;border-radius:999px;transition:opacity 0.2s; }
     .t3-btn-primary:hover { opacity:0.85; }
     .t3-btn-outline { display:inline-flex;align-items:center;gap:8px;padding:8px 20px;font-size:0.875rem;font-weight:900;color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.2);border-radius:999px;transition:all 0.2s; }
     .t3-btn-outline:hover { border-color:rgba(255,255,255,0.5);color:#fff; }
@@ -41,14 +41,14 @@
     .t3-hero-left { flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:48px 64px; }
     .t3-hero-right { position:relative;width:45%;min-height:400px; }
     .t3-hero-right img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover; }
-    .t3-hero-strip { position:absolute;top:0;left:0;bottom:0;width:6px;background:#2d6a4f; }
+    .t3-hero-strip { position:absolute;top:0;left:0;bottom:0;width:6px;background:#c05c7e; }
     .t3-hero-caption { position:absolute;bottom:0;left:6px;right:0;padding:20px;background:linear-gradient(to top, rgba(0,0,0,0.7), transparent); }
 
     .t3-tagline { font-size:0.75rem;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#6b7280;margin-bottom:20px; }
     .t3-headline { font-size:clamp(2rem,4vw,3.2rem);font-weight:900;color:#111827;line-height:1.05;letter-spacing:-0.02em;margin-bottom:20px; }
     .t3-subh { font-size:1rem;color:#6b7280;line-height:1.6;max-width:380px;margin-bottom:32px; }
     .t3-hero-btns { display:flex;flex-wrap:wrap;gap:12px; }
-    .t3-cta-primary { display:inline-flex;align-items:center;padding:12px 24px;background:#2d6a4f;color:#fff;font-size:0.875rem;font-weight:700;border-radius:999px;transition:opacity 0.2s; }
+    .t3-cta-primary { display:inline-flex;align-items:center;padding:12px 24px;background:#c05c7e;color:#fff;font-size:0.875rem;font-weight:700;border-radius:999px;transition:opacity 0.2s; }
     .t3-cta-primary:hover { opacity:0.9; }
     .t3-cta-secondary { display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#fff;color:#1f2937;border:2px solid #ccc;font-size:0.875rem;font-weight:700;border-radius:999px;transition:background 0.2s; }
     .t3-cta-secondary:hover { background:#f9fafb; }
@@ -60,7 +60,7 @@
     .t3-service-row { display:flex;align-items:center;background:#fff;cursor:pointer;transition:background 0.3s; border-bottom:1px solid #e5e7eb; }
 
     .t3-about { display:flex;min-height:500px; }
-    .t3-about-left { width:40%;display:flex;flex-direction:column;justify-content:center;padding:64px;background:#2d6a4f; }
+    .t3-about-left { width:40%;display:flex;flex-direction:column;justify-content:center;padding:64px;background:#c05c7e; }
     .t3-about-right { flex:1;display:flex;flex-direction:column; }
 
     .t3-reviews-header { background:#fff;border-bottom:1px solid #e5e7eb;padding:28px 64px;display:flex;align-items:center;justify-content:space-between; }
@@ -68,10 +68,10 @@
     .t3-review { border-right:1px solid #e5e7eb; }
 
     .t3-cta-section { position:relative;min-height:280px;display:flex;align-items:center;overflow:hidden; }
-    .t3-cta-overlay { position:absolute;inset:0;background:#1a2e1f;opacity:0.88; }
+    .t3-cta-overlay { position:absolute;inset:0;background:#1e2a3a;opacity:0.88; }
     .t3-cta-inner { position:relative;z-index:1;width:100%;max-width:1280px;margin:0 auto;padding:80px 64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:40px; }
     .t3-cta-btns { display:flex;flex-wrap:wrap;gap:12px; }
-    .t3-cta-white { display:inline-flex;align-items:center;padding:16px 32px;background:#fff;color:#2d6a4f;font-size:0.875rem;font-weight:900;border-radius:999px;white-space:nowrap; }
+    .t3-cta-white { display:inline-flex;align-items:center;padding:16px 32px;background:#fff;color:#c05c7e;font-size:0.875rem;font-weight:900;border-radius:999px;white-space:nowrap; }
     .t3-cta-phone { display:inline-flex;align-items:center;gap:8px;padding:16px 32px;color:#fff;border:2px solid rgba(255,255,255,0.3);font-size:0.875rem;font-weight:900;border-radius:999px;white-space:nowrap;transition:border-color 0.2s; }
     .t3-cta-phone:hover { border-color:rgba(255,255,255,0.6); }
 
@@ -82,12 +82,12 @@
     .t3-input:focus { border-bottom-color:#111827; }
     .t3-label { display:block;font-size:0.7rem;font-weight:900;text-transform:uppercase;letter-spacing:0.15em;color:#9ca3af;margin-bottom:8px; }
     .t3-form-grid { display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px; }
-    .t3-submit { width:100%;padding:16px;background:#2d6a4f;color:#fff;font-size:0.875rem;font-weight:900;letter-spacing:0.1em;text-transform:uppercase;border:none;border-radius:999px;cursor:pointer;transition:opacity 0.2s; }
+    .t3-submit { width:100%;padding:16px;background:#c05c7e;color:#fff;font-size:0.875rem;font-weight:900;letter-spacing:0.1em;text-transform:uppercase;border:none;border-radius:999px;cursor:pointer;transition:opacity 0.2s; }
     .t3-submit:hover { opacity:0.9; }
     .t3-contact-item { display:flex;align-items:center;gap:16px;margin-bottom:24px; }
-    .t3-contact-icon { width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#2d6a4f20;flex-shrink:0;color:#2d6a4f; }
+    .t3-contact-icon { width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#c05c7e20;flex-shrink:0;color:#c05c7e; }
 
-    .t3-footer { background:#fff;border-top:4px solid #2d6a4f;padding:48px 64px; }
+    .t3-footer { background:#fff;border-top:4px solid #c05c7e;padding:48px 64px; }
     .t3-footer-grid { display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between;margin-bottom:40px; }
 
     @media (max-width: 768px) {
@@ -129,7 +129,7 @@
   </div>
 </nav>
 
-<section class="t3-hero" style="background:#f9f6f0;">
+<section class="t3-hero" style="background:#f8f9fa;">
   <div class="t3-hero-left">
     <div>
       <p class="t3-tagline fade-in">Your trusted plumbing service for over 70 years!</p>
@@ -159,10 +159,10 @@
 <section id="services">
   <div class="t3-services-header">
     <h2 style="font-size:1.5rem;font-weight:900;color:#111827;text-transform:uppercase;letter-spacing:-0.01em;">Our Services</h2>
-    <a href="#contact" style="font-size:0.75rem;font-weight:900;text-transform:uppercase;letter-spacing:0.15em;color:#2d6a4f;">Book Any Service →</a>
+    <a href="#contact" style="font-size:0.75rem;font-weight:900;text-transform:uppercase;letter-spacing:0.15em;color:#c05c7e;">Book Any Service →</a>
   </div>
   <div><div class="t3-service-row slide-in" style="animation-delay:0s;"
-      onmouseenter="this.style.backgroundColor='#2d6a4f';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
+      onmouseenter="this.style.backgroundColor='#c05c7e';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
       onmouseleave="this.style.backgroundColor='';this.querySelector('.svc-num').style.color='#e5e7eb';this.querySelector('.svc-title').style.color='#111827';this.querySelector('.svc-desc').style.color='#6b7280';this.querySelector('.svc-arrow').style.color='#d1d5db';">
       <div style="width:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:32px 0;border-right:1px solid #f3f4f6;">
         <span class="svc-num" style="font-size:2rem;font-weight:900;color:#e5e7eb;letter-spacing:-0.04em;transition:color 0.3s;">01</span>
@@ -178,7 +178,7 @@
         <span class="svc-arrow" style="font-size:1.25rem;color:#d1d5db;transition:color 0.3s;">→</span>
       </div>
     </div><div class="t3-service-row slide-in" style="animation-delay:0.07s;"
-      onmouseenter="this.style.backgroundColor='#2d6a4f';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
+      onmouseenter="this.style.backgroundColor='#c05c7e';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
       onmouseleave="this.style.backgroundColor='';this.querySelector('.svc-num').style.color='#e5e7eb';this.querySelector('.svc-title').style.color='#111827';this.querySelector('.svc-desc').style.color='#6b7280';this.querySelector('.svc-arrow').style.color='#d1d5db';">
       <div style="width:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:32px 0;border-right:1px solid #f3f4f6;">
         <span class="svc-num" style="font-size:2rem;font-weight:900;color:#e5e7eb;letter-spacing:-0.04em;transition:color 0.3s;">02</span>
@@ -194,7 +194,7 @@
         <span class="svc-arrow" style="font-size:1.25rem;color:#d1d5db;transition:color 0.3s;">→</span>
       </div>
     </div><div class="t3-service-row slide-in" style="animation-delay:0.14s;"
-      onmouseenter="this.style.backgroundColor='#2d6a4f';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
+      onmouseenter="this.style.backgroundColor='#c05c7e';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
       onmouseleave="this.style.backgroundColor='';this.querySelector('.svc-num').style.color='#e5e7eb';this.querySelector('.svc-title').style.color='#111827';this.querySelector('.svc-desc').style.color='#6b7280';this.querySelector('.svc-arrow').style.color='#d1d5db';">
       <div style="width:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:32px 0;border-right:1px solid #f3f4f6;">
         <span class="svc-num" style="font-size:2rem;font-weight:900;color:#e5e7eb;letter-spacing:-0.04em;transition:color 0.3s;">03</span>
@@ -210,7 +210,7 @@
         <span class="svc-arrow" style="font-size:1.25rem;color:#d1d5db;transition:color 0.3s;">→</span>
       </div>
     </div><div class="t3-service-row slide-in" style="animation-delay:0.21000000000000002s;"
-      onmouseenter="this.style.backgroundColor='#2d6a4f';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
+      onmouseenter="this.style.backgroundColor='#c05c7e';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
       onmouseleave="this.style.backgroundColor='';this.querySelector('.svc-num').style.color='#e5e7eb';this.querySelector('.svc-title').style.color='#111827';this.querySelector('.svc-desc').style.color='#6b7280';this.querySelector('.svc-arrow').style.color='#d1d5db';">
       <div style="width:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:32px 0;border-right:1px solid #f3f4f6;">
         <span class="svc-num" style="font-size:2rem;font-weight:900;color:#e5e7eb;letter-spacing:-0.04em;transition:color 0.3s;">04</span>
@@ -226,7 +226,7 @@
         <span class="svc-arrow" style="font-size:1.25rem;color:#d1d5db;transition:color 0.3s;">→</span>
       </div>
     </div><div class="t3-service-row slide-in" style="animation-delay:0.28s;"
-      onmouseenter="this.style.backgroundColor='#2d6a4f';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
+      onmouseenter="this.style.backgroundColor='#c05c7e';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
       onmouseleave="this.style.backgroundColor='';this.querySelector('.svc-num').style.color='#e5e7eb';this.querySelector('.svc-title').style.color='#111827';this.querySelector('.svc-desc').style.color='#6b7280';this.querySelector('.svc-arrow').style.color='#d1d5db';">
       <div style="width:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:32px 0;border-right:1px solid #f3f4f6;">
         <span class="svc-num" style="font-size:2rem;font-weight:900;color:#e5e7eb;letter-spacing:-0.04em;transition:color 0.3s;">05</span>
@@ -242,7 +242,7 @@
         <span class="svc-arrow" style="font-size:1.25rem;color:#d1d5db;transition:color 0.3s;">→</span>
       </div>
     </div><div class="t3-service-row slide-in" style="animation-delay:0.35000000000000003s;"
-      onmouseenter="this.style.backgroundColor='#2d6a4f';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
+      onmouseenter="this.style.backgroundColor='#c05c7e';this.querySelector('.svc-num').style.color='rgba(255,255,255,0.3)';this.querySelector('.svc-title').style.color='#fff';this.querySelector('.svc-desc').style.color='rgba(255,255,255,0.5)';this.querySelector('.svc-arrow').style.color='#fff';"
       onmouseleave="this.style.backgroundColor='';this.querySelector('.svc-num').style.color='#e5e7eb';this.querySelector('.svc-title').style.color='#111827';this.querySelector('.svc-desc').style.color='#6b7280';this.querySelector('.svc-arrow').style.color='#d1d5db';">
       <div style="width:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:32px 0;border-right:1px solid #f3f4f6;">
         <span class="svc-num" style="font-size:2rem;font-weight:900;color:#e5e7eb;letter-spacing:-0.04em;transition:color 0.3s;">06</span>
@@ -270,23 +270,23 @@
     <div class="t3-about-right fade-right">
       
     <div style="display:flex;align-items:flex-start;gap:24px;padding:32px 40px;border-bottom:1px solid #f3f4f6;">
-      <span style="color:#2d6a4f;font-size:1.25rem;flex-shrink:0;margin-top:2px;">✓</span>
+      <span style="color:#c05c7e;font-size:1.25rem;flex-shrink:0;margin-top:2px;">✓</span>
       <p style="color:#1f2937;font-weight:600;font-size:1rem;line-height:1.6;">Licensed & Insured Professionals</p>
     </div>
     <div style="display:flex;align-items:flex-start;gap:24px;padding:32px 40px;border-bottom:1px solid #f3f4f6;">
-      <span style="color:#2d6a4f;font-size:1.25rem;flex-shrink:0;margin-top:2px;">✓</span>
+      <span style="color:#c05c7e;font-size:1.25rem;flex-shrink:0;margin-top:2px;">✓</span>
       <p style="color:#1f2937;font-weight:600;font-size:1rem;line-height:1.6;">24/7 Emergency Service Available</p>
     </div>
     <div style="display:flex;align-items:flex-start;gap:24px;padding:32px 40px;border-bottom:1px solid #f3f4f6;">
-      <span style="color:#2d6a4f;font-size:1.25rem;flex-shrink:0;margin-top:2px;">✓</span>
+      <span style="color:#c05c7e;font-size:1.25rem;flex-shrink:0;margin-top:2px;">✓</span>
       <p style="color:#1f2937;font-weight:600;font-size:1rem;line-height:1.6;">Customer Satisfaction Guaranteed</p>
     </div>
     <div style="display:flex;align-items:flex-start;gap:24px;padding:32px 40px;border-bottom:1px solid #f3f4f6;">
-      <span style="color:#2d6a4f;font-size:1.25rem;flex-shrink:0;margin-top:2px;">✓</span>
+      <span style="color:#c05c7e;font-size:1.25rem;flex-shrink:0;margin-top:2px;">✓</span>
       <p style="color:#1f2937;font-weight:600;font-size:1rem;line-height:1.6;">Fast & Competitive Pricing</p>
     </div>
       <div style="padding:40px;">
-        <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:#2d6a4f;color:#fff;font-size:0.875rem;font-weight:900;border-radius:0;">Work With Us →</a>
+        <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:#c05c7e;color:#fff;font-size:0.875rem;font-weight:900;border-radius:0;">Work With Us →</a>
       </div>
     </div>
   </div>
@@ -296,42 +296,42 @@
   <div class="t3-reviews-header">
     <h2 style="font-size:1.5rem;font-weight:900;color:#111827;text-transform:uppercase;letter-spacing:-0.01em;">Customer Reviews</h2>
     <div style="display:flex;align-items:center;gap:8px;">
-      <div style="display:flex;gap:2px;"><div style="width:10px;height:10px;border-radius:50%;background:#2d6a4f;"></div><div style="width:10px;height:10px;border-radius:50%;background:#2d6a4f;"></div><div style="width:10px;height:10px;border-radius:50%;background:#2d6a4f;"></div><div style="width:10px;height:10px;border-radius:50%;background:#2d6a4f;"></div><div style="width:10px;height:10px;border-radius:50%;background:#2d6a4f40;"></div></div>
+      <div style="display:flex;gap:2px;"><div style="width:10px;height:10px;border-radius:50%;background:#c05c7e;"></div><div style="width:10px;height:10px;border-radius:50%;background:#c05c7e;"></div><div style="width:10px;height:10px;border-radius:50%;background:#c05c7e;"></div><div style="width:10px;height:10px;border-radius:50%;background:#c05c7e;"></div><div style="width:10px;height:10px;border-radius:50%;background:#c05c7e40;"></div></div>
       <span style="font-size:0.875rem;font-weight:900;color:#374151;">4.0/5</span>
     </div>
   </div>
   <div class="t3-reviews-grid">
-    <div class="t3-review slide-in" style="padding:40px;background:#f9f6f0;animation-delay:0s;">
-      <div style="font-size:5rem;font-weight:900;line-height:1;margin-bottom:16px;color:#2d6a4f20;">"</div>
+    <div class="t3-review slide-in" style="padding:40px;background:#f8f9fa;animation-delay:0s;">
+      <div style="font-size:5rem;font-weight:900;line-height:1;margin-bottom:16px;color:#c05c7e20;">"</div>
       <p style="color:#374151;font-size:1rem;line-height:1.7;margin-bottom:28px;font-style:italic;">"...Informing me I could pay by cash, card or bank transfer..."</p>
       <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f3f4f6;padding-top:20px;">
         <div>
           <div style="font-weight:900;color:#111827;font-size:0.9rem;">Verified Customer</div>
           <div style="font-size:0.75rem;color:#9ca3af;margin-top:2px;">Verified Customer</div>
         </div>
-        <div style="font-size:1.25rem;font-weight:900;color:#2d6a4f;">4.0</div>
+        <div style="font-size:1.25rem;font-weight:900;color:#c05c7e;">4.0</div>
       </div>
     </div>
-    <div class="t3-review slide-in" style="padding:40px;background:#f9f6f0;animation-delay:0.1s;">
-      <div style="font-size:5rem;font-weight:900;line-height:1;margin-bottom:16px;color:#2d6a4f20;">"</div>
+    <div class="t3-review slide-in" style="padding:40px;background:#f8f9fa;animation-delay:0.1s;">
+      <div style="font-size:5rem;font-weight:900;line-height:1;margin-bottom:16px;color:#c05c7e20;">"</div>
       <p style="color:#374151;font-size:1rem;line-height:1.7;margin-bottom:28px;font-style:italic;">"...Easy to communicate with and went out of their way to get the job done!!..."</p>
       <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f3f4f6;padding-top:20px;">
         <div>
           <div style="font-weight:900;color:#111827;font-size:0.9rem;">Verified Customer</div>
           <div style="font-size:0.75rem;color:#9ca3af;margin-top:2px;">Verified Customer</div>
         </div>
-        <div style="font-size:1.25rem;font-weight:900;color:#2d6a4f;">4.0</div>
+        <div style="font-size:1.25rem;font-weight:900;color:#c05c7e;">4.0</div>
       </div>
     </div>
-    <div class="t3-review slide-in" style="padding:40px;background:#f9f6f0;animation-delay:0.2s;">
-      <div style="font-size:5rem;font-weight:900;line-height:1;margin-bottom:16px;color:#2d6a4f20;">"</div>
+    <div class="t3-review slide-in" style="padding:40px;background:#f8f9fa;animation-delay:0.2s;">
+      <div style="font-size:5rem;font-weight:900;line-height:1;margin-bottom:16px;color:#c05c7e20;">"</div>
       <p style="color:#374151;font-size:1rem;line-height:1.7;margin-bottom:28px;font-style:italic;">"...They also offered me some promotion that helped me save on the cost of labour..."</p>
       <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f3f4f6;padding-top:20px;">
         <div>
           <div style="font-weight:900;color:#111827;font-size:0.9rem;">Verified Customer</div>
           <div style="font-size:0.75rem;color:#9ca3af;margin-top:2px;">Verified Customer</div>
         </div>
-        <div style="font-size:1.25rem;font-weight:900;color:#2d6a4f;">4.0</div>
+        <div style="font-size:1.25rem;font-weight:900;color:#c05c7e;">4.0</div>
       </div>
     </div></div>
 </section>
@@ -355,7 +355,7 @@
   <div class="t3-contact">
     <div class="t3-contact-left fade-left">
       <div>
-        <div style="font-size:0.7rem;font-weight:900;text-transform:uppercase;letter-spacing:0.3em;color:#2d6a4f;margin-bottom:24px;">Contact</div>
+        <div style="font-size:0.7rem;font-weight:900;text-transform:uppercase;letter-spacing:0.3em;color:#c05c7e;margin-bottom:24px;">Contact</div>
         <h2 style="font-size:2.5rem;font-weight:900;color:#fff;line-height:1.05;letter-spacing:-0.03em;margin-bottom:24px;">Get Your<br />Free Quote</h2>
         <p style="color:rgba(255,255,255,0.5);font-size:0.875rem;line-height:1.6;margin-bottom:48px;">Fill in the form and we'll respond within the hour. No obligation, no hard sell.</p>
         <div>
@@ -376,7 +376,7 @@
         <button type="submit" class="t3-submit">Send Message →</button>
       </form>
       <div id="form-success" style="display:none;text-align:center;padding:64px 0;">
-        <div style="font-size:4rem;font-weight:900;color:#2d6a4f;margin-bottom:16px;">✓</div>
+        <div style="font-size:4rem;font-weight:900;color:#c05c7e;margin-bottom:16px;">✓</div>
         <h3 style="font-size:1.5rem;font-weight:900;color:#111827;margin-bottom:8px;">Message Received!</h3>
         <p style="color:#9ca3af;font-size:0.875rem;">We'll be in touch within the hour.</p>
       </div>
@@ -407,7 +407,7 @@
   </div>
   <div style="border-top:1px solid #f3f4f6;padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
     <p style="color:#d1d5db;font-size:0.75rem;">© 2026 George The Plumber. All rights reserved.</p>
-    <a href="#contact" style="font-size:0.75rem;font-weight:900;text-transform:uppercase;letter-spacing:0.15em;color:#2d6a4f;">Free Quote →</a>
+    <a href="#contact" style="font-size:0.75rem;font-weight:900;text-transform:uppercase;letter-spacing:0.15em;color:#c05c7e;">Free Quote →</a>
   </div>
 </footer>
 
